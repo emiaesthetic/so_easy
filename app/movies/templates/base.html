@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+    <meta name="description" content="Movify - Movies, Series & Cinema HTML Template">
+    <meta name="keywords" content="movies, series, online streaming, html template, cinema html template">
+    <meta name="author" content="GnoDesign">
+
+    <title>soeasy.</title>
+
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'assets/images/apple-touch-icon-iphone.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/images/apple-touch-icon-ipad.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/images/apple-touch-icon-iphone-retina.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/images/apple-touch-icon-ipad-retina.png' %}">
+    <link rel="apple-touch-icon" sizes="167x167" href="{% static 'assets/images/apple-touch-icon-ipad-pro.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/apple-touch-icon-iphone-6-plus.png' %}">
+    <link rel="icon" sizes="192x192" href="{% static 'assets/images/icon-hd.png' %}">
+    <link rel="icon" sizes="128x128" href="{% static 'assets/images/icon.png' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/revolution/css/settings.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/revolution/css/layers.cs' %}s">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/revolution/css/navigation.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/jquery.mmenu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl.carousel.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/responsive.css' %}">
+</head>
+
+<body>
+
+    <div class="loading">
+        <div class="loading-inner">
+            <div class="loading-effect">
+                <div class="object"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav id="main-mobile-nav"></nav>
+
+    <div class="wrapper">
+        <header
+        {% block header %}
+
+        {% endblock %}>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg">
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="{% static 'assets/images/logo.svg' %}" alt="logo" width="150" class="logo">
+                        <img src="{% static 'assets/images/logo-white.svg' %}" alt="white logo" width="150" class="logo-white">
+                    </a>
+
+                    <a href="#login-register-popup" class="login-mobile-btn popup-with-zoom-anim"><i class="icon-user"></i></a>
+
+                    <button id="mobile-nav-toggler" class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    {% include 'includes/menu.html' %}
+                </nav>
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+
+        {% include 'includes/footer.html' %}
+
+    </div>
+
+
+    {% include 'includes/search.html' %}
+
+    {% include 'includes/login.html' %}
+
+    <div id="backtotop">
+        <a href="#"></a>
+    </div>
+
+    <script src="{% static 'assets/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.ajaxchimp.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.mmenu.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.inview.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countTo.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/headroom.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'assets/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+
+</body>
+
+</html>

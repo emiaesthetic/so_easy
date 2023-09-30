@@ -1,0 +1,277 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+
+    class="header header-fixed header-transparent text-white"
+
+{% endblock %}
+
+{% block content %}
+
+<section
+	class="movie-detail-intro overlay-gradient ptb100"
+	style="background: url(assets/images/other/movie-detail-bg.jpg)">
+	<div class="container">
+		<div class="movie-details">
+			<h3 class="title">Star Wars: The Movie</h3>
+
+			<ul class="movie-subtext">
+				<li>PG-13</li>
+				<li>2h 32min</li>
+				<li>Action, Adventure, Fantasy</li>
+				<li>15 December 2017 (USA)</li>
+			</ul>
+
+			<a href="#" class="btn btn-main btn-effect">trailer</a>
+			<a href="#" class="btn btn-main btn-effect">watch later</a>
+			<a href="#" class="btn rate-movie"><i class="icon-heart"></i></a>
+
+			<div class="rating mt10">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+				<span>296 Ratings</span>
+			</div>
+		</div>
+
+		<a
+			href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+			class="play-video"
+		>
+			<i class="fa fa-play"></i>
+		</a>
+	</div>
+</section>
+
+<section class="movie-detail-main ptb100">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-sm-12">
+				<div class="inner pr50">
+					<div class="storyline">
+						<h3 class="title">Storyline</h3>
+
+						<p>
+							In ut odio libero, at vulputate urna. Nulla
+							tristique mi a massa convallis cursus. Nulla eu mi
+							magna. Etiam suscipit commodo gravida. Cras
+							suscipit, quam vitae adipiscing faucibus, risus nibh
+							laoreet odio, a porttitor metus eros ut enim. Morbi
+							augue velit, tempus mattis dignissim nec, porta sed
+							risus. Donec eget magna eu lorem tristique
+							pellentesque eget eu dui. Fusce lacinia tempor
+							malesuada. Ut lacus sapien, placerat a ornare nec,
+							elementum sit amet felis. Maecenas pretium lorem
+							hendrerit eros sagittis fermentum.
+						</p>
+					</div>
+
+					<!-- Media -->
+					<div class="movie-media mt50">
+						<h3 class="title">Photos & Videos</h3>
+
+						<ul class="image-gallery isotope">
+							<li class="element">
+								<a
+									href="{% static 'assets/images/blog/bloglist-1.jpg' %}"
+								>
+									<img
+										src="{% static 'assets/images/blog/bloglist-1.jpg' %}"
+										class="img-responsive"
+										alt=""
+									/>
+								</a>
+							</li>
+
+							<li class="element">
+								<a
+									href="{% static 'assets/images/blog/bloglist-2.jpg' %}"
+								>
+									<img
+										src="{% static 'assets/images/blog/bloglist-2.jpg' %}"
+										class="img-responsive"
+										alt=""
+									/>
+								</a>
+							</li>
+
+							<li class="element">
+								<a
+									href="{% static 'assets/images/other/home2-bg.jpg' %}"
+								>
+									<img
+										src="{% static 'assets/images/other/home2-bg.jpg' %}"
+										class="img-responsive"
+										alt=""
+									/>
+								</a>
+							</li>
+
+							<li class="element">
+								<a
+									href="{% static 'assets/images/blog/bloglist-2.jpg' %}"
+								>
+									<img
+										src="{% static 'assets/images/blog/bloglist-2.jpg' %}"
+										class="img-responsive"
+										alt=""
+									/>
+								</a>
+							</li>
+
+							<li class="element">
+								<a
+									href="{% static 'assets/images/blog/bloglist-1.jpg' %}"
+								>
+									<img
+										src="{% static 'assets/images/blog/bloglist-1.jpg' %}"
+										class="img-responsive"
+										alt=""
+									/>
+								</a>
+							</li>
+
+							<li class="element">
+								<a
+									href="{% static 'assets/images/blog/bloglist-3.jpg' %}"
+								>
+									<img
+										src="{% static 'assets/images/blog/bloglist-3.jpg' %}"
+										class="img-responsive"
+										alt=""
+									/>
+								</a>
+							</li>
+
+							<li class="element">
+								<a
+									href="{% static 'assets/images/blog/bloglist-1.jpg' %}"
+								>
+									<img
+										src="{% static 'assets/images/blog/bloglist-1.jpg' %}"
+										class="img-responsive"
+										alt=""
+									/>
+								</a>
+							</li>
+
+							<li class="element">
+								<a
+									href="{% static 'assets/images/other/landscape.jpg' %}"
+								>
+									<img
+										src="{% static 'assets/images/other/landscape.jpg' %}"
+										class="img-responsive"
+										alt=""
+									/>
+								</a>
+							</li>
+
+							<li class="element">
+								<a
+									href="{% static 'assets/images/other/home2-bg.jpg' %}"
+								>
+									<img
+										src="{% static 'assets/images/other/home2-bg.jpg' %}"
+										class="img-responsive"
+										alt=""
+									/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-12">
+				<div class="sidebar">
+					<aside class="widget widget-movie-details">
+						<h3 class="title">Details</h3>
+
+						<ul>
+							<li>
+								<strong>Release date: </strong>December 15, 2017
+							</li>
+							<li>
+								<strong>Director: </strong
+								><a href="#">Rian Johnson</a>
+							</li>
+							<li><strong>Budget: </strong>200 million USD</li>
+							<li><strong>Country: </strong>USA</li>
+							<li><strong>Language: </strong>English</li>
+							<li>
+								<strong>Production Co: </strong
+								><a href="#">Lucasfilm</a>
+							</li>
+						</ul>
+					</aside>
+
+					<aside class="widget widget-movie-cast">
+						<h3 class="title">Cast</h3>
+
+						<ul class="cast-wrapper">
+							<li>
+								<a href="celebrity-detail.html">
+									<span class="circle-img">
+										<img
+											src="{% static 'assets/images/celebrities/celebrity1.jpg' %}"
+											alt=""
+										/>
+									</span>
+									<h6 class="name">Bryan Doe</h6>
+								</a>
+							</li>
+
+							<li>
+								<a href="celebrity-detail.html">
+									<span class="circle-img">
+										<img
+											src="{% static 'assets/images/celebrities/celebrity2.jpg' %}"
+											alt=""
+										/>
+									</span>
+									<h6 class="name">Baron Saul</h6>
+								</a>
+							</li>
+
+							<li>
+								<a href="celebrity-detail.html">
+									<span class="circle-img">
+										<img
+											src="{% static 'assets/images/celebrities/celebrity3.jpg' %}"
+											alt=""
+										/>
+									</span>
+									<h6 class="name">Ewan Actor</h6>
+								</a>
+							</li>
+
+							<li>
+								<a href="celebrity-detail.html">
+									<span class="circle-img">
+										<img
+											src="{% static 'assets/images/celebrities/celebrity4.jpg' %}"
+											alt=""
+										/>
+									</span>
+									<h6 class="name">Nicole Beet</h6>
+								</a>
+							</li>
+						</ul>
+
+						<a
+							href="celebrities-list.html"
+							class="btn btn-main btn-effect mt20"
+							>view all</a
+						>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

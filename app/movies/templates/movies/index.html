@@ -1,0 +1,337 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+
+    class="header header-fixed header-transparent text-white"
+
+{% endblock %}
+
+{% block content %}
+
+    <section id="slider" class="hero-slider">
+        <div class="rev-slider-wrapper fullwidthbanner-container overlay-gradient">
+            <div
+                id="fullwidth-slider"
+                class="rev_slider fullwidthabanner"
+                style="display: none"
+                data-version="5.4.1"
+            >
+                <ul>
+                    <li data-transition="fade">
+                        <img
+                            src="{% static 'assets/images/other/home2-bg.jpg' %}"
+                            alt="Image"
+                            title="slider-bg"
+                            data-bgposition="center center"
+                            data-bgfit="cover"
+                            data-bgrepeat="no-repeat"
+                            data-bgparallax="10"
+                            class="rev-slidebg"
+                            data-no-retina=""
+                        />
+                        <div
+                            class="tp-caption tp-resizeme"
+                            data-x="center"
+                            data-hoffset=""
+                            data-y="middle"
+                            data-voffset="['-30','-30','-30','-30']"
+                            data-responsive_offset="on"
+                            data-fontsize="['60','50','40','30']"
+                            data-lineheight="['60','50','40','30']"
+                            data-whitespace="nowrap"
+                            data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                            style="z-index: 5; color: #fff; font-weight: 900"
+                        >
+                            WELCOME TO MOVIFY
+                        </div>
+
+                        <div
+                            class="tp-caption tp-resizeme"
+                            data-x="center"
+                            data-hoffset=""
+                            data-y="middle"
+                            data-voffset="['60','60','60','40']"
+                            data-width="[1200, 992, 768, 98%]"
+                            data-responsive_offset="on"
+                            data-whitespace="nowrap"
+                            data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                            style="z-index: 5; color: #fff; font-weight: 900"
+                        >
+                            <form id="search-form-1">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-8 col-sm-10 col-12">
+                                        <div class="form-group">
+                                            <input
+                                                name="search-keyword"
+                                                type="text"
+                                                id="search-keyword"
+                                                value=""
+                                                class="form-control"
+                                                placeholder="Enter Movies or Series Title"
+                                            />
+                                            <button
+                                                type="submit"
+                                                class="btn btn-main btn-effect"
+                                            >
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-movies ptb100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="title">Latest Movies</h2>
+                </div>
+
+                <div class="col-md-4 align-self-center text-right">
+                    <a href="#" class="btn btn-icon btn-main btn-effect">
+                        view all
+                        <i class="ti-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="owl-carousel latest-movies-slider mt20">
+                <div class="item">
+                    <div class="movie-box-1">
+                        <div class="poster">
+                            <img
+                                src="{% static 'assets/images/posters/poster-1.jpg' %}"
+                                alt=""
+                            />
+                        </div>
+
+                        <div class="buttons">
+                            <a
+                                href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                                class="play-video"
+                            >
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+
+                        <div class="movie-details">
+                            <h4 class="movie-title">
+                                <a href="movie-detail.html">Star Wars</a>
+                            </h4>
+                            <span class="released">14 Dec 2017</span>
+                        </div>
+
+                        <div class="stars">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <span>7.5 / 10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="movie-box-1">
+                        <div class="poster">
+                            <img
+                                src="{% static 'assets/images/posters/poster-2.jpg' %}"
+                                alt=""
+                            />
+                        </div>
+
+                        <div class="buttons">
+                            <a
+                                href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                                class="play-video"
+                            >
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+
+                        <div class="movie-details">
+                            <h4 class="movie-title">
+                                <a href="movie-detail.html">The Brain</a>
+                            </h4>
+                            <span class="released">20 Dec 2017</span>
+                        </div>
+
+                        <div class="stars">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <span>7.2 / 10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="movie-box-1">
+                        <div class="poster">
+                            <img
+                                src="{% static 'assets/images/posters/poster-3.jpg' %}"
+                                alt=""
+                            />
+                        </div>
+
+                        <div class="buttons">
+                            <a
+                                href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                                class="play-video"
+                            >
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+
+                        <div class="movie-details">
+                            <h4 class="movie-title">
+                                <a href="movie-detail.html">The Mummy</a>
+                            </h4>
+                            <span class="released">9 Jun 2017</span>
+                        </div>
+
+                        <div class="stars">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <span>5.5 / 10</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="movie-box-1">
+                        <div class="poster">
+                            <img
+                                src="{% static 'assets/images/posters/poster-4.jpg' %}"
+                                alt=""
+                            />
+                        </div>
+
+                        <div class="buttons">
+                            <a
+                                href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                                class="play-video"
+                            >
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+
+                        <div class="movie-details">
+                            <h4 class="movie-title">
+                                <a href="movie-detail.html">The Parrot</a>
+                            </h4>
+                            <span class="released">20 Jan 2017</span>
+                        </div>
+
+                        <div class="stars">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <span>5.2 / 10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="movie-box-1">
+                        <div class="poster">
+                            <img
+                                src="{% static 'assets/images/posters/poster-1.jpg' %}"
+                                alt=""
+                            />
+                        </div>
+
+                        <div class="buttons">
+                            <a
+                                href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                                class="play-video"
+                            >
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+
+                        <div class="movie-details">
+                            <h4 class="movie-title">
+                                <a href="movie-detail.html">Star Wars</a>
+                            </h4>
+                            <span class="released">14 Dec 2017</span>
+                        </div>
+
+                        <div class="stars">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <span>7.5 / 10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="movie-box-1">
+                        <div class="poster">
+                            <img
+                                src="{% static 'assets/images/posters/poster-2.jpg' %}"
+                                alt=""
+                            />
+                        </div>
+
+                        <div class="buttons">
+                            <a
+                                href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                                class="play-video"
+                            >
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+
+                        <div class="movie-details">
+                            <h4 class="movie-title">
+                                <a href="movie-detail.html">The Brain</a>
+                            </h4>
+                            <span class="released">20 Dec 2017</span>
+                        </div>
+
+                        <div class="stars">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <span>7.2 / 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

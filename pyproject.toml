@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "cinematheater"
+version = "0.1.0"
+description = ""
+authors = ["emiaesthetic <emi.aesthetic@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.2.5"
+djangorestframework = "^3.14.0"
+psycopg2-binary = "^2.9.8"
+pillow = "^10.0.1"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+ruff = "^0.0.291"
+mypy = "^1.5.1"
+ipython = "^8.16.0"
+django-extensions = "^3.2.3"
+django-debug-toolbar = "^4.2.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+pytest-django = "^4.5.2"
+factory-boy = "^3.3.0"
+
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | migrations
+)/
+'''
+
+
+[tool.ruff]
+line-length = 100
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,26 @@
+# IDE
+.idea
+.vscode/
+
+# CAHCE
+.mypy_cache/
+__pycache__/
+.pytest_cache/
+
+# LOGS
+logs/
+
+# ENVIRONMENT
+.venv/
+.env
+.test.env
+devices.txt
+
+# settings
+setup.cfg
+pytest.ini
+.python-version
+
+
+# other
+.DS_Store

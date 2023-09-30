@@ -1,0 +1,82 @@
+[
+	{
+		"model": "movies.country",
+		"pk": 1,
+		"fields": { "title": "США", "slug": "usa" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 2,
+		"fields": { "title": "Китай", "slug": "china" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 3,
+		"fields": { "title": "Россия", "slug": "russia" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 4,
+		"fields": { "title": "Великобритания", "slug": "united-kingdom" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 5,
+		"fields": { "title": "Франция", "slug": "france" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 6,
+		"fields": { "title": "Дания", "slug": "denmark" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 7,
+		"fields": { "title": "Австралия", "slug": "australia" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 8,
+		"fields": { "title": "Мексика", "slug": "mexico" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 9,
+		"fields": { "title": "Канада", "slug": "canada" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 10,
+		"fields": { "title": "Нормандские острова", "slug": "channel-islands" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 11,
+		"fields": { "title": "СССР", "slug": "ussr" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 12,
+		"fields": { "title": "Польша", "slug": "poland" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 13,
+		"fields": { "title": "Германия", "slug": "germany" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 14,
+		"fields": { "title": "Япония", "slug": "japan" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 15,
+		"fields": { "title": "Швеция", "slug": "sweden" }
+	},
+	{
+		"model": "movies.country",
+		"pk": 16,
+		"fields": { "title": "Новая Зеландия", "slug": "new-zealand" }
+	}
+]

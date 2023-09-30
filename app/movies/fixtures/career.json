@@ -1,0 +1,42 @@
+[
+	{
+		"model": "movies.career",
+		"pk": 1,
+		"fields": { "position": "Актёр", "slug": "actor" }
+	},
+	{
+		"model": "movies.career",
+		"pk": 2,
+		"fields": { "position": "Актриса", "slug": "actress" }
+	},
+	{
+		"model": "movies.career",
+		"pk": 3,
+		"fields": { "position": "Продюсер", "slug": "producer" }
+	},
+	{
+		"model": "movies.career",
+		"pk": 4,
+		"fields": { "position": "Режиссёр", "slug": "director" }
+	},
+	{
+		"model": "movies.career",
+		"pk": 5,
+		"fields": { "position": "Сценарист", "slug": "screenwriter" }
+	},
+	{
+		"model": "movies.career",
+		"pk": 6,
+		"fields": { "position": "Монтажёр", "slug": "editor" }
+	},
+	{
+		"model": "movies.career",
+		"pk": 7,
+		"fields": { "position": "Оператор", "slug": "operator" }
+	},
+	{
+		"model": "movies.career",
+		"pk": 8,
+		"fields": { "position": "Композитор", "slug": "composer" }
+	}
+]

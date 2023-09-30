@@ -1,0 +1,22 @@
+[
+	{
+		"model": "movies.category",
+		"pk": 1,
+		"fields": { "title": "Фильмы", "slug": "movies" }
+	},
+	{
+		"model": "movies.category",
+		"pk": 2,
+		"fields": { "title": "Сериалы", "slug": "serials" }
+	},
+	{
+		"model": "movies.category",
+		"pk": 3,
+		"fields": { "title": "Мультфильмы", "slug": "cartoons" }
+	},
+	{
+		"model": "movies.category",
+		"pk": 4,
+		"fields": { "title": "Спорт", "slug": "sport" }
+	}
+]

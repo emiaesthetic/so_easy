@@ -1,13 +1,10 @@
-<section
-	class="page-header overlay-gradient"
-	style="background: url(assets/images/posters/movie-collection.jpg)"
->
+<section class="page-header overlay-gradient" style="background: url(assets/images/posters/movie-collection.jpg)">
 	<div class="container">
 		<div class="inner">
-			<h2 class="title">Movie List 2</h2>
+			<h2 class="title">{{ category }}</h2>
 			<ol class="breadcrumb">
-				<li><a href="index.html">Home</a></li>
-				<li>Movie List 2</li>
+				<li><a href="{% url 'movies:index' %}">Movify</a></li>
+				<li>{{ category }}</li>
 			</ol>
 		</div>
 	</div>

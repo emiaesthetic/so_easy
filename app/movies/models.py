@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Category(models.Model):
@@ -11,6 +12,9 @@ class Category(models.Model):
 
     def __str__(self) -> str:
         return f"{self.title}"
+
+    def get_absolute_url(self):
+        return reverse("movies:category", kwargs={"category": self.slug})
 
 
 class Genre(models.Model):
@@ -87,7 +91,9 @@ class Movie(models.Model):
     director = models.ManyToManyField(Celebrity, related_name="directors")
     actor = models.ManyToManyField(Celebrity, related_name="actors")
     genre = models.ManyToManyField(Genre, related_name="movies")
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
+    category = models.ForeignKey(
+        Category, on_delete=models.SET_NULL, null=True, related_name="movies"
+    )
     slug = models.SlugField(max_length=155, unique=True)
     status = models.CharField(max_length=2, choices=Status.choices, default=Status.DRAFT)
 
@@ -100,3 +106,6 @@ class Movie(models.Model):
 
     def __str__(self) -> str:
         return f"{self.title}"
+
+    def get_absolute_url(self):
+        return reverse("movies:movie", kwargs={"slug": self.slug})

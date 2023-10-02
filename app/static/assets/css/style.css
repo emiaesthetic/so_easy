@@ -554,12 +554,6 @@ footer.entry-footer {
     padding: 0;
 }
 
-.circle-img img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-
 .rev-slider-wrapper {
     left: 0 !important;
 }
@@ -4648,7 +4642,7 @@ main .col-md-12:last-of-type .movie-list-2 {
 .movie-list-2 .listing-content {
     flex: 6;
     position: relative;
-    text-align: center;
+    text-align: justify;
 }
 
 .movie-list-2 .listing-content .inner {
@@ -4990,7 +4984,7 @@ main .col-md-12:last-of-type .movie-list-2 {
 }
 
 .movie-detail-main .sidebar .widget-movie-cast .cast-wrapper img {
-    width: 60px;
+    width: 70px;
     display: inline-block;
     margin-right: 20px;
 }
